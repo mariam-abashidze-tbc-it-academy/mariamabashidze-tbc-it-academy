@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Forms</title>
+</head>
+<body>
+    <h2>Participant</h2>
+
+    <form action="/submit-here" method="post" accept-charset="UTF-8" autocomplete="on" target="_self">
+        <label for="first">First name *</label>
+        <input id="first" name="first_name" required autocomplete="given-name"><br>
+
+        <label for="last">Last name *</label>
+        <input id="last" name="last_name" required autocomplete="family-name"><br>
+
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" placeholder="You@example.com" autocomplete="email"><br>
+
+        <label for="id">Student ID *</label>
+        <input id="id" name="id" placeholder="TBC-2025-1234" required><br>
+
+        <p>Format: TBC-2025-0000</p>
+
+        <label for="city">City (Type to search)</label>
+        <input id="city" name="city" placeholder="Start typing..." required><br>
+
+        <h2>Workshop Preferences</h2>
+        <p>Track *</p>
+
+        <label><input type="radio" name="html" value="html" required>HTML Essentials</label>
+        <label><input type="radio" name="css" value="css" required>CSS Layouts</label>
+        <label><input type="radio" name="js" value="js" required>Vanilla JS</label>
+
+        <!-- ეს აქ იყოს, სხვანაირად ვერ დავიმახსოვრებ: Select multiple; "size" controls visible rows -->
+            <label for="skills">Current skills (hold Ctrl to choose multiple)</label>
+            <select id="skills" name="skills" size="4" multiple>
+                <option>Semantics</option>
+                <option>Forms</option>
+                <option>Flexbox</option>
+                <option>Grid</option>
+                <option>Accessibility</option>
+                <option>Testing</option>
+            </select><br>
+
+            <label for="portfolio">Portfolio link</label>
+            <input id="portfolio" name="portfolio" placeholder="https://..." required><br>
+            <p>Optional, but helpful.</p>
+
+                    <label for="preferred-date">Preferred date</label><br>
+            <input type="date" id="preferred-date" name="preferred_date" required><br>
+
+            <label for="start-time">Preferred start time</label><br>
+            <input type="time" id="start-time" name="start_time" required><br>
+
+            <label for="prework">Upload pre-work (PDF, PNG, max 5MB)</label><br>
+            <input type="file" id="prework" name="prework" accept=".pdf,.png" required><br>
+
+            <h2>Notes</h2>
+            
+            <label for="bio">What would you like to learn most?</label>
+            <textarea id="bio" name="bio" dirname="bio.dir" rows="6" placeholder="Tell us about your goals, blockers and any accomodations you need."></textarea><br>
+
+
+            <label><input type="checkbox" name="a" value="1">I agree to be contacted about my registration *</label><br>
+            <label><input type="checkbox" name="a" value="1">I agree to the code of conduct *</label><br>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit registration</button>
+
+    </form>
+</body>
+</html>

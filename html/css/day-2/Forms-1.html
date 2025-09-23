@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-Forms</title>
+</head>
+<body>
+    <h1>Tell us about your project</h1>
+    <p>Fill this brief. We'll get back to you with ideas, timing, and a ballpark estimate.</p>
+
+    <form action="/submit-here" method="post" accept-charset="UTF-8" autocomplete="on" target="_self">
+        <fieldset disabled>
+            <legend>Who are you?</legend>
+
+            <label for="first">First name *</label>
+            <input id="first" name="first_name" required placeholder="Your name" autocomplete="given-name"><br>
+
+            <label for="last">Last name *</label>
+            <input id="last" name="last_name" required placeholder="Your last name" autocomplete="family-name"><br>
+
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" placeholder="You@domain.com" autocomplete="email"><br>
+
+            <label for="tel">Phone</label>
+            <input id="tel" name="phone" type="tel" placeholder="(555) 555-1212" autocomplete="tel"><br>
+            <small>Optional — but helpful if we need a quick question answered.</small><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Project basics</legend>
+
+            <label for="website">Current project or domain</label>
+            <input id="website" name="website" type="url" placeholder="https://example.com" autocomplete="url"><br>
+
+            <label for="address">Address</label>
+            <input id="address" name="address" placeholder="123 Maple str." autocomplete="street-address"><br>
+
+            <label for="city">City</label>
+            <input id="city" name="city" placeholder="City" autocomplete="address-level2"><br>
+
+            <label for="state">State/Region</label>
+            <select id="state" name="state">
+                <option value="" disabled selected>Please choose...</option>
+                <option value="caelid">Caelid</option>
+                <option value="limgrave">Limgrave</option>
+                <option value="nokron">Nokron</option>
+                <option value="leyndell">Leyndell</option>
+            </select><br>
+
+            <label for="zip">Zip/Postal code</label>
+            <input id="zip" name="postal" inputmode="numeric" enterkeyhint="next" placeholder="12345"><br>
+
+            <label for="date">Project start date</label>
+            <input type="date" id="date" name="date"><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="slider">Estimated budget (move the slider)</label><br>
+            <input id="slider" name="slider" type="range" min="0" max="10" step="1" value="5">
+
+            <p>Do you alredy have Hosting? *</p>
+            <label><input type="radio" name="hosting" value="y" required>Yes</label>
+            <label><input type="radio" name="hosting" value="n" required>No</label>
+            <label><input type="radio" name="hosting" value="ns" required>Not sure</label>
+
+            <p>Preferred contact method *</p>
+            <label><input type="radio" name="hosting" value="email" required>Email</label>
+            <label><input type="radio" name="hosting" value="phone" required>Phone</label>
+            <label><input type="radio" name="hosting" value="video" required>Video call</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Project description</legend>
+
+            <label for="bio">Describe your project *</label>
+            <textarea id="bio" name="bio" dirname="bio.dir" rows="4" placeholder="Tell us what you're building"></textarea>
+
+            <p>Good prompts: goals, audience, 3-5 features, inspiration links.</p>
+        </fieldset>
+
+        <label><input type="checkbox" name="a" value="1">I agree to be contacted about this inquiry*</label><br>
+    
+        <button type="submit">Reset</button>
+        <button type="submit">Send request</button>
+    </form>
+</body>
+</html>

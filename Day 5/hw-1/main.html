@@ -1,0 +1,118 @@
+<!-- Homework #1
+In this homework you should create your own e-commerce website.
+For this homework you should use HTML5 tags.
+Don't use css.
+
+Description:
+On Main page you should use not less than 3 different images for each category.
+On Main page you should display at least 3 items of categories
+`Category` items should be clickable and linked to corresponding page
+On Main page you should have categories links.
+On Category page you should use not less than 6 products with image, price, title and cropped description.
+On Category page you should have link to the main page and each image should be a link to Single Item page.
+The height for the image on Main page should be 200
+The height for the image on Category page should be 200
+The height for the image on Single Item page should be like as in original image.
+On Signle Item page title, image, price and full description should be visible
+On every page breadcrumb should be displayed, each part of breadcrumb should be clickable and working -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce website</title>
+</head>
+<body>
+    <header>
+        <h1>My E-Commerce website</h1>
+        <nav>
+            <a href="main.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="categories">Categories</h2>
+            <nav>
+                <ul>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="jojomerch.html">Jojo Merch</a></li>
+                    <li><a href="books.html">Books</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <h2>Games</h2>
+            <a href="games.html">
+                <figure>
+                    <img src="./imgs/bloodborne.jpg" height="200" alt="Bloodborne Game">
+                    <figcaption>Bloodborne</figcaption>
+                </figure>
+            </a>
+            <a href="games.html">
+                <figure>
+                    <img src="./imgs/eldo.jpg" height="200" alt="Elden Ring Game">
+                    <figcaption>Elden Ring</figcaption>
+                </figure>
+            </a>
+            <a href="games.html">
+                <figure>
+                    <img src="./imgs/seko.webp" height="200" alt="Sekiro Game">
+                    <figcaption>Sekiro: Shadows Die Twice</figcaption>
+                </figure>
+            </a>
+        </section>
+
+        <section>
+            <h2>Jojo Merch</h2>
+            <a href="jojomerch.html">
+                <figure>
+                    <img src="./imgs/jojopin.avif" height="200" alt="Pin">
+                    <figcaption>Jojo Pin</figcaption>
+                </figure>
+            </a>
+            <a href="jojomerch.html">
+                <figure>
+                    <img src="./imgs/jojoshirt.jpg" height="200" alt="Jojo Shirt">
+                    <figcaption>Jojo Shirt</figcaption>
+                </figure>
+            </a>
+            <a href="jojomerch.html">
+                <figure>
+                    <img src="./imgs/jojoshoes.webp" height="200" alt="Jojo Shoes">
+                    <figcaption>Jojo Shoes</figcaption>
+                </figure>
+            </a>
+        </section>
+
+        <section>
+            <h2>Books</h2>
+            <a href="books.html">
+                <figure>
+                    <img src="./imgs/etranger.jpg" height="200" alt="Albert Camus - The Stranger">
+                    <figcaption>Albert Camus - The Stranger</figcaption>
+                </figure>
+            </a>
+            <a href="books.html">
+                <figure>
+                    <img src="./imgs/lolita.jpeg" height="200" alt="Vladimir Nabokov - Lolita">
+                    <figcaption>Vladimir Nabokov - Lolita</figcaption>
+                </figure>
+            </a>
+            <a href="books.html">
+                <figure>
+                    <img src="./imgs/ray.jpg" height="200" alt="Ray Bradburry - Something Wicked This Way Comes">
+                    <figcaption>Ray Bradburry - Something Wicked This Way Comes</figcaption>
+                </figure>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025</p>
+    </footer>
+</body>
+</html>
+
+

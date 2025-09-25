@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #e91e63;
+}
+
+.main-title {
+  text-align: center;
+  color: #222;
+  margin-top: 20px;
+}
+
+.blog-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.blog-iframe {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-pic {
+  display: block;
+  margin: 20px auto;
+}
+
+#page-footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+header nav ul li a {
+  padding: 5px 8px;
+}
+
+header > nav > ul {
+  gap: 20px;
+}
+
+h1 + section {
+  margin-top: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #e91e63;
+}
+
+.blog-article {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.blog-article img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+
+/* 
+
+
+რaც მოვასწარი ესაა და ბოლოსკენ ოდნავ გპტც მივიხმარე, i admit
+
+
+*/
